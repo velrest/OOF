@@ -1,7 +1,12 @@
+/*
+Primary Color: #673ab7
+Secondary Color: #9a67ea & #320b86
+Accent: #64b5f6
+*/
+
 body {
   width: 100%;
   font-family: "Roboto Condensed",sans-serif;
-  background-color: #00BF9A;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -9,65 +14,42 @@ body {
 
 img {
   width: 480px;
+  margin: 5px;
 }
 
-.container {
+span{
+  font-size: 60px;
+}
+
+video {
+  width: 960px;
+  height: 540px;
+}
+
+.outer {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: black;
 }
 
-.film{
+.inner{
+    width: 100%;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
 
-.film div{
+.inner div{
   display: flex;
   justify-content: center;
 }
 
-.film span{
-  font-size: 60px;
-}
-
-.film img {
-  width: 960px;
-}
-
-.p span{
-  font-size: 60px;
-}
-
-.p img {
-  margin: 5px;
-  width: 480px;
-}
-
-.p {
-  background-color: #008975;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+.colored_background {
+  background-color: #673ab7;
   color: white;
-}
-
-.sf {
-  background-color: white;
-}
-
-.r {
-  background-color: #008975;
-  color: white;
-  /*flex-direction: row;
-  align-items: center;
-  justify-content: center;*/
-}
-
-.d {
-  background-color: white;
-  /*flex-direction: row;
-  align-items: center;
-  justify-content: center;*/
 }

@@ -6,7 +6,7 @@
   <link rel="icon" href="icon.png">
 </head>
 <body>
-  <div class="container p">
+  <div class="outer colored_background">
     <span>Bilder</span>
     <div>
       <div>
@@ -22,30 +22,42 @@
     </div>
   </div>
 
-  <div class="container sf film">
-    <div>
-      <span>Kurzfilm</span>
-    </div>
-    <div>
-      <img src="img/a.png">
-    </div>
-  </div>
-
-  <div class="container r film">
-    <div>
-      <img src="img/f.png">
-    </div>
-    <div>
-      <span>Reportage</span>
+  <div class="outer sf">
+    <div class="inner">
+      <div>
+        <span>Kurzfilm</span>
+      </div>
+      <div>
+        <video controls>
+          <source src="video/example.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
   </div>
 
-  <div class="container d film">
-    <div>
-      <span>Dokumentarfilm</span>
+  <div class="outer colored_background">
+    <div class="inner">
+      <div>
+        <video controls>
+          <source src="video/example.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div>
+        <span>Reportage</span>
+      </div>
     </div>
-    <div>
-      <img src="img/e.jpg">
+  </div>
+
+  <div class="outer">
+    <div class="inner">
+      <div>
+        <span>Dokumentarfilm</span>
+      </div>
+      <div>
+        <video controls>
+          <source src="video/example.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
   </div>
 
