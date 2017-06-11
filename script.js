@@ -3,11 +3,11 @@
 
     class Image {
       constructor(i, n){
-        this.img = i+'-'+n;
-        this.modal = 'm-'+i+'-'+n;
-        this.modalImg = 'mi-'+i+'-'+n;
-        this.captionText = 'c-'+i+'-'+n;
-        this.close = 'cm-'+i+'-'+n;
+        this.img = '#'+i+'-'+n;
+        this.modal = '#'+'m-'+i+'-'+n;
+        this.modalImg = '#'+'mi-'+i+'-'+n;
+        this.captionText = '#'+'c-'+i+'-'+n;
+        this.close = '#'+'cm-'+i+'-'+n;
       }
     }
 
@@ -20,14 +20,15 @@
         new Image('ms', 1),new Image('ms', 2),new Image('ms', 3),
       ];
       images.map(function(img){
-        document.getElementById(img.img).onclick = function(){
-            document.getElementById(img.modal).style.display = "block";
-            document.getElementById(img.modalImg).src = this.src;
-            document.getElementById(img.captionText).innerHTML = this.alt;
-        };
-        document.getElementById(img.close).onclick = function(){
-            document.getElementById(img.modal).style.display = "none";
-        };
+        $(img.img).click(function(){
+            $(img.modal).css('display', 'block');
+            $(img.modalImg).attr('src', this.src);
+            $('body').css('overflow', 'hidden');
+        });
+        $(img.close).click(function(){
+            $(img.modal).css('display', 'none');
+            $('body').css('overflow', 'scroll');
+        });
       })
     })
 
