@@ -4,12 +4,12 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 body {
-  font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   position: relative;
   width: 100%;
   height: 100%;
-  color: white;
-  background-color: black; }
+  color: black;
+  background-color: white; }
 
 html {
   width: 100%;
@@ -21,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
   margin: 0 0 35px;
   letter-spacing: 1px;
@@ -50,7 +50,7 @@ a {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-bottom: 0;
   text-transform: uppercase;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  /*border-bottom: 1px solid rgba(255, 255, 255, 0.3);*/
   background-color: black; }
   #mainNav .navbar-toggler {
     font-size: 14px;
@@ -64,7 +64,8 @@ a {
   #mainNav .navbar-nav .nav-item {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out; }
+    transition: background .3s ease-in-out;
+  }
     #mainNav .navbar-nav .nav-item:hover {
       color: fade(white, 80%);
       outline: none;
@@ -83,11 +84,12 @@ a {
       background: transparent; }
       #mainNav.navbar-shrink {
         padding: 10px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        background: black; }
+        /*border-bottom: 1px solid rgba(0, 150, 136, 0.3);*/
+        background: #009688; }
       #mainNav .nav-link.active {
         outline: none;
-        background-color: rgba(255, 255, 255, 0.3); }
+        background-color: #4527a0;
+      }
         #mainNav .nav-link.active:hover {
           color: white; } }
 
@@ -142,16 +144,16 @@ a {
 .content-section {
   padding-top: 100px; }
 
-.download-section {
+/*.download-section {
   width: 100%;
   padding: 50px 0;
   color: white;
   background: url(static/bg2.png) no-repeat center center scroll;
-  background-color: black;
+  background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover; }*/
 
 
 @media (min-width: 767px) {
