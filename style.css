@@ -1,10 +1,5 @@
-/*!
- * Start Bootstrap - Grayscale v4.0.0-alpha (http://startbootstrap.com/template-overviews/grayscale)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
- */
 body {
-  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   position: relative;
   width: 100%;
   height: 100%;
@@ -25,9 +20,20 @@ h6 {
   font-weight: 700;
   margin: 0 0 35px;
   letter-spacing: 1px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color:#009688;
+}
+
+.uncolored{
+    color: white;
+}
+
+.colored-bg{
+  background-color: #52c7b8;
+}
 
 p {
+  width: 100%;
   font-size: 16px;
   line-height: 1.5;
   margin: 0 0 25px; }
@@ -47,7 +53,7 @@ a {
     color: #1d9b6c; }
 
 #mainNav {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /*font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
   margin-bottom: 0;
   text-transform: uppercase;
   /*border-bottom: 1px solid rgba(255, 255, 255, 0.3);*/
@@ -142,7 +148,7 @@ a {
     background: rgba(255, 255, 255, 0.1); }
 
 .content-section {
-  padding-top: 100px; }
+  padding-bottom: 100px; }
 
 /*.download-section {
   width: 100%;
@@ -158,12 +164,15 @@ a {
 
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 250px; }
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+  }
   .download-section {
     padding: 100px 0; } }
 
 .btn {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /*font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
   font-weight: 400;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
