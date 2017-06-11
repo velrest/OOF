@@ -1,3 +1,7 @@
+/*
+  Color scheme: https://material.io/color/#!/?view.left=0&view.right=0&secondary.color=4527A0&primary.color=009688
+*/
+
 body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   position: relative;
@@ -29,7 +33,11 @@ h6 {
 }
 
 .colored-bg{
-  background-color: #52c7b8;
+  background-color: #00675b;
+}
+
+.top-margin {
+  margin-top: 25px;
 }
 
 p {
@@ -171,26 +179,30 @@ a {
   .download-section {
     padding: 100px 0; } }
 
-.btn {
+/*.btn {*/
   /*font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
-  font-weight: 400;
+  /*font-weight: 400;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   text-transform: uppercase;
-  border-radius: 0; }
+  border-radius: 0; }*/
 
 .btn-default {
-  color: #42DCA3;
-  border: 1px solid #42DCA3;
-  background-color: transparent; }
+  border-radius: 2px;
+  border: none;
+  height: 36px;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px rgba(0,0,0,0.2);
+  text-align: center;
+  letter-spacing: .5px;
+  padding: 10px;
+  background-color: #4527a0; }
   .btn-default:hover, .btn-default:focus {
-    color: black;
-    border: 1px solid #42DCA3;
-    outline: none;
-    background-color: #42DCA3; }
+    color: white;
+    background-color: #7953d2
+  }
 
-ul.banner-social-buttons {
+/*ul.banner-social-buttons {
   margin-top: 0; }
   @media (max-width: 1199px) {
     ul.banner-social-buttons {
@@ -201,7 +213,7 @@ ul.banner-social-buttons {
       margin-bottom: 20px;
       padding: 0; }
       ul.banner-social-buttons li:last-child {
-        margin-bottom: 0; } }
+        margin-bottom: 0; } }*/
 
 footer {
   padding: 50px 0; }
